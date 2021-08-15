@@ -23,7 +23,7 @@ const ProductDetails = (props) => {
       dispatch(selectedProduct(response.data));
     };
     if (productId && productId !== "") return fetchProductDetails();
-  }, [productId]);
+  }, [productId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="ui grid container" style={{ marginTop: "20px" }}>

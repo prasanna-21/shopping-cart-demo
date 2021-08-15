@@ -18,7 +18,7 @@ const ProductList = () => {
   };
   useEffect(() => {
     fetchProducts();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   console.log(products);
   return (
